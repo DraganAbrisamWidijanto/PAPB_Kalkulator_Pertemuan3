@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/calculateSection"
+        android:layout_marginBottom="28dp"
+        android:textAlignment="textEnd"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/subCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mainCalc"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textEnd"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/calculateSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="78dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/forButtonSpecial"
+                android:layout_weight="1"
+                android:onClick="inputOperation"
+                android:text="C" />
+
+            <Button
+                style="@style/forButtonOperations"
+                android:layout_weight="1"
+                android:onClick="inputOperation"
+                android:text="%" />
+
+            <Button
+                style="@style/forButtonOperations"
+                android:layout_weight="1"
+                android:onClick="inputOperation"
+                android:text="/" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/forButtonDelete"
+                android:layout_weight="1"
+                android:onClick="inputDelete"
+                android:text="del" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/forButton"
+                android:layout_weight="1"
+                android:onClick="inputNumber"
+                android:text="7" />
+
+            <Button
+                style="@style/forButton"
+                android:layout_weight="1"
+                android:onClick="inputNumber"
+                android:text="8" />
+
+            <Button
+                style="@style/forButton"
+                android:layout_weight="1"
+                android:onClick="inputNumber"
+                android:text="9" />
+
+            <Button
+                style="@style/forButtonOperations"
+                android:layout_weight="1"
+                android:onClick="inputOperation"
+                android:text="*" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/forButton"
+                android:layout_weight="1"
+                android:onClick="inputNumber"
+                android:text="4" />
+
+            <Button
+                style="@style/forButton"
+                android:layout_weight="1"
+                android:onClick="inputNumber"
+                android:text="5" />
+
+            <Button
+                style="@style/forButton"
+                android:layout_weight="1"
+                android:onClick="inputNumber"
+                android:text="6" />
+
+            <Button
+                style="@style/forButtonOperations"
+                android:layout_weight="1"
+                android:onClick="inputOperation"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/forButton"
+                android:layout_weight="1"
+                android:onClick="inputNumber"
+                android:text="1" />
+
+            <Button
+                style="@style/forButton"
+                android:layout_weight="1"
+                android:onClick="inputNumber"
+                android:text="2" />
+
+            <Button
+                style="@style/forButton"
+                android:layout_weight="1"
+                android:onClick="inputNumber"
+                android:text="3" />
+
+            <Button
+                style="@style/forButtonOperations"
+                android:layout_weight="1"
+                android:onClick="inputOperation"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/forButton"
+                android:layout_weight="1"
+                android:onClick="inputNumber"
+                android:text="0" />
+
+            <Button
+                style="@style/forButton"
+                android:layout_weight="1"
+                android:onClick="makeDecimal"
+                android:text="." />
+
+            <Button
+                style="@style/forButtonSpecial"
+                android:layout_width="145dp"
+                android:layout_weight="1"
+                android:onClick="inputOperation"
+                android:text="=" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

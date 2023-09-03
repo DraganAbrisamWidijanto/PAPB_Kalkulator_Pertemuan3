@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    angka  -->
+    <style name="forButton">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:backgroundTint">#176B87</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+<!--    delete -->
+    <style name="forButtonDelete">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:backgroundTint">#952323</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+<!--        new&hasil  -->
+    <style name="forButtonSpecial">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:backgroundTint">#64CCC5</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+<!--    tanda operasi  -->
+    <style name="forButtonOperations">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:backgroundTint">#053B50</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>
